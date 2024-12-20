@@ -19,10 +19,32 @@ Revisar los anexos donde se encontrara el desarrollo del reto.
 
 1.
 ```mermaid
+flowchart TD
+    A[Inicio] --> B[Número\Cuadrado]
+    B --> D[Iniciar bucle for desde 1 hasta 100]
+    D --> E{¿Número <= 100?}
+    E -->|Sí| F[Imprimir número y su cuadrado]
+    F --> G[Incrementar número]
+    G --> D
+    E -->|No| H[Fin]
 
 ```
 2. 
 ```mermaid
+flowchart TD
+    A[Inicio] --> B[Números Impares del 1 al 999]
+    B --> D[Iniciar bucle para números impares desde 1 hasta 999]
+    D --> E{¿Número <= 999?}
+    E -->|Sí| F[Imprimir número impar]
+    F --> G[Incrementar número en 2]
+    G --> D
+    E -->|No| H[Números Pares del 2 al 1000]
+    H --> J[Iniciar bucle para números pares desde 2 hasta 1000]
+    J --> K{¿Número <= 1000?}
+    K -->|Sí| L[Imprimir número par]
+    L --> M[Incrementar número en 2]
+    M --> J
+    K -->|No| N[Fin]
 
 ```
 3.
